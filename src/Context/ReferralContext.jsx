@@ -25,7 +25,7 @@ export const ReferralProvider = ({ children }) => {
         consent: formData.consent,
       };
 
-      const response = await axios.post("http://localhost:5000/api/submit", payload);
+      const response = await axios.post("https://accredian-backend-task-9uk0.onrender.com/api/submit", payload);
 
       if (response.status === 200) {
         toast.success("Referral submitted successfully!");
